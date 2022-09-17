@@ -5,371 +5,159 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/Mensagero.css">
-    <title>Mensagero</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mensageiro</title>
 </head>
 
 <body>
-
     <nav>
-        <ul>
-            <b><li><label class="btn_check" for="box"><i class='bx bx-menu'></i> Menu</li></b></label>
-            <b><li><i class='bx bx-wrench'></i> Configurações</li></b>
-            <b><li id="btn" onclick="mudar()"><i class='bx bxs-adjust-alt'></i> Theme</li></b>
-        </ul>
+        <img src="imagens/user7.jpg" class="imagem-perfil">
+        <h3>Olá Israel</h3> <br>
+        <p>Lorem Ipsum is simply dummy text</p>
+        <div class="config"><i class='bx bx-cog'></i></div>
     </nav>
 
+    <div class="mobToggle">
+        <div id="cvsToggle">Conversa</div>
+        <div id="msgToggle">Mensagens</div>
+    </div>
 
-    <input type="radio" class="btn_radio" name="contact" id="box1">
-    <input type="radio" class="btn_radio" name="contact" id="box2">
-    <input type="radio" class="btn_radio" name="contact" id="box3">
-    <input type="radio" class="btn_radio" name="contact" id="box4">
-    <input type="radio" class="btn_radio" name="contact" id="box5">
-    <input type="radio" class="btn_radio" name="contact" id="box6">
-    <input type="radio" class="btn_radio" name="contact" id="box7">
-    <input type="radio" class="btn_radio" name="contact" id="box8">
+    <div class="mensagens">
+        <h2>Mensagens</h2>
 
-
-
-    <div class="ChatsAll">
-        <label for="box1"> <div class="chat1">
+        <div class="contatos">
             <img src="imagens/user1.jpg" class="imagem-perfil">
-            <h2 id="titulo">Aldemir becker</h2>
-            <p id="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-            <i class='bx bx-show-alt'></i><br><br>
-        </div></label>
+            <span>
+                <h4>Brunno Freitas</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </span>
+            <div class="hora">19h30</div>
+        </div>
 
-
-        <label for="box2">
-        <div class="chat2">
+        <div class="contatos">
             <img src="imagens/user2.jpg" class="imagem-perfil">
-            <h2 id="titulo">Geraldo Alckmin</h2>
-            <p id="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-            <i class='bx bx-show-alt'></i><br><br>
+            <span>
+                <h4>Lucas Ferreira</h4>
+                <p>Donec euismod augue vel ligula...</p>
+            </span>
+            <div class="hora">16h21</div>
         </div>
-        </label>
 
-        <label for="box3">  <div class="chat3">
+        <div class="contatos">
             <img src="imagens/user3.jpg" class="imagem-perfil">
-            <h2 id="titulo">Guilerme Almeida</h2>
-            <p id="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-            <i class='bx bx-show-alt'></i><br><br>
-        </div></label>
+            <span>
+                <h4>Luis Henrique </h4>
+                <p>Donec ut ipsum quis odio aliquet...</p>
+            </span>
+            <div class="hora">18h46</div>
+        </div>
 
-        <label for="box4"> <div class="chat4">
-             <img src="imagens/user4.jpg" class="imagem-perfil">
-            <h2 id="titulo">Amanda Salles</h2>
-            <p id="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-            <i class='bx bx-show-alt'></i><br><br>
-        </div></label>
+        <div class="contatos">
+            <img src="imagens/user4.jpg" class="imagem-perfil">
+            <span>
+                <h4>Amanda Vieira</h4>
+                <p>Hello ❤️</p>
+            </span>
+            <div class="hora">12h49</div>
+        </div>
 
-
-        <label for="box5">
-        <div class="chat5">
+        <div class="contatos">
             <img src="imagens/user5.jpg" class="imagem-perfil">
-            <h2 id="titulo">Angela Brito</h2>
-            <p id="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-            <i class='bx bx-show-alt'></i><br><br>
+            <span>
+                <h4>Natália Santos</h4>
+                <p>Praesent vel lorem egestas, feugiat ligula at...</p>
+            </span>
+            <div class="hora">10h11</div>
         </div>
-        </label>
 
-        <label for="box6"> <div class="chat6">
-             <img src="imagens/user6.jpg" class="imagem-perfil">
-            <h2 id="titulo">Juliana  Santos</h2>
-            <p id="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-            <i class='bx bx-show-alt'></i><br><br>
-        </div></label>
+        <div class="contatos">
+            <img src="imagens/user6.jpg" class="imagem-perfil">
+            <span>
+                <h4>Raquel Amori</h4>
+                <p>Lorem Ipsum is simply dummy text</p>
+            </span>
+            <div class="hora">22h49</div>
+        </div>
 
-
-        <label for="box7">  <div class="chat7">
+        <div class="contatos">
             <img src="imagens/user7.jpg" class="imagem-perfil">
-            <h2 id="titulo">Jeon Jung-kook</h2>
-            <p id="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-            <i class='bx bx-show-alt'></i><br><br>
-        </div></label>
+            <span>
+                <h4>André Santana</h4>
+                <p>Phasellus et massa nec felis ornare ultricies</p>
+            </span>
+            <div class="hora">09h07</div>
+        </div>
 
+        <div class="contatos">
+            <img src="imagens/user8.jpg" class="imagem-perfil">
+            <span>
+                <h4>Rebeca Santos</h4>
+                <p>In aliquam sem a ligula ornare</p>
+            </span>
+            <div class="hora">15h59</div>
+        </div>
 
-        <label for="box8"> <div class="chat8">
-             <img src="imagens/user8.jpg" class="imagem-perfil">
-            <h2 id="titulo">Rebeca Hartman</h2>
-            <p id="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-            <i class='bx bx-show-alt'></i><br><br>
-        </div></label>
+        <div class="contatos">
+            <img src="imagens/user4.jpg" class="imagem-perfil">
+            <span>
+                <h4>Maria Lourdes</h4>
+                <p>Mauris vitae nunc in mi porttitor facilisis.</p>
+            </span>
+            <div class="hora">Ontem</div>
+        </div>
 
-    </div>
+        <div class="contatos">
+            <img src="imagens/user2.jpg" class="imagem-perfil">
+            <span>
+                <h4>Israel Santana</h4>
+                <p>Lorem Ipsum is simply dummy text</p>
+            </span>
+            <div class="hora">Ontem</div>
+        </div>
 
-
-
-
-
-    <div class="pessoa1">
-        <div class="chat-compl">
-
-            <div id="nav-chat">
-
-                <img src="imagens/user1.jpg" id="imagem-perfil">
-
-                <h2 id="titulo">Aldemir becker</h2>
-
-                <i class='bx bx-dots-vertical-rounded'></i>
-
-
-            </div>
-
-            <div id="mylist"></div>
-            <form action="">
-                <div id="footer-chat">
-                    <i class='bx bx-message-detail'></i>
-                    <input type="text" id="chat" placeholder="  Digite sua mensagem aqui..." #ccc onkeypress="return enviarcomenter(event);">
-                    <input type="reset" value="Enviar" id="send" onclick="enviar()">
-                </div>
-            </form>
+        <div class="contatos">
+            <img src="imagens/user7.jpg" class="imagem-perfil">
+            <span>
+                <h4>Israel Santana</h4>
+                <p>Phasellus et massa nec felis ornare ultricies</p>
+            </span>
+            <div class="hora">Ontem</div>
         </div>
     </div>
 
-    <div class="pessoa2">
-
-        <div class="chat-compl">
-
-            <div id="nav-chat">
-
-                <img src="imagens/user2.jpg" id="imagem-perfil">
-
-                <h2 id="titulo">Geraldo Alckmin</h2>
-
-                <i class='bx bx-dots-vertical-rounded'></i>
 
 
-            </div>
-
-            <div id="mylist"></div>
-            <form action="">
-                <div id="footer-chat">
-                    <i class='bx bx-message-detail'></i>
-                    <input type="text" id="chat" placeholder="  Digite sua mensagem aqui..." #ccc onkeypress="return enviarcomenter(event);">
-                    <input type="reset" value="Enviar" id="send" onclick="enviar()">
-                </div>
-            </form>
+    <div class="chat">
+        
+        <div class="nav_chat">
+            <img src="imagens/user1.jpg" class="imagem-perfil">
+            <span>
+                <h4>Brunno Freitas</h4>
+                <p>Online</p>
+            </span>
+    
+            <div class="btn_ligar"><i class='bx bx-phone-call' style="position: relative; top: 3px; font-size: 20px; " ></i>ﾠLigar</div>
         </div>
 
 
-    </div>
-
-    <div class="pessoa3">
-
-        <div class="chat-compl">
-
-            <div id="nav-chat">
-
-                <img src="imagens/user3.jpg" id="imagem-perfil">
-
-                <h2 id="titulo">Guilerme Almeida</h2>
-
-                <i class='bx bx-dots-vertical-rounded'></i>
-
-
-            </div>
-
-            <div id="mylist"></div>
-            <form action="">
-                <div id="footer-chat">
-                    <i class='bx bx-message-detail'></i>
-                    <input type="text" id="chat" placeholder="  Digite sua mensagem aqui..." #ccc onkeypress="return enviarcomenter(event);">
-                    <input type="reset" value="Enviar" id="send" onclick="enviar()">
-                </div>
-            </form>
+        <div class="msg">
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
         </div>
+        
 
-    </div>
-
-    <div class="pessoa4">
-
-        <div class="chat-compl">
-
-            <div id="nav-chat">
-
-                <img src="imagens/user4.jpg" id="imagem-perfil">
-
-                <h2 id="titulo">Amanda Salles</h2>
-
-                <i class='bx bx-dots-vertical-rounded'></i>
-
-
-            </div>
-
-            <div id="mylist"></div>
-            <form action="">
-                <div id="footer-chat">
-                    <i class='bx bx-message-detail'></i>
-                    <input type="text" id="chat" placeholder="  Digite sua mensagem aqui..." #ccc onkeypress="return enviarcomenter(event);">
-                    <input type="reset" value="Enviar" id="send" onclick="enviar()">
-                </div>
-            </form>
+        <div class="footer_chat">
+            <input type="text" placeholder="     Envie sua mensagem aqui..." id="msg">
+            <div class="btn_ligar"><i class='bx bx-send' style="position: relative; top: 3px; font-size: 21px; " ></i>ﾠEnviar</div>
         </div>
-
     </div>
 
-    <div class="pessoa5">
-
-        <div class="chat-compl">
-
-            <div id="nav-chat">
-
-                <img src="imagens/user5.jpg" id="imagem-perfil">
-
-                <h2 id="titulo">Angela Brito</h2>
-
-                <i class='bx bx-dots-vertical-rounded'></i>
-
-
-            </div>
-
-            <div id="mylist"></div>
-            <form action="">
-                <div id="footer-chat">
-                    <i class='bx bx-message-detail'></i>
-                    <input type="text" id="chat" placeholder="  Digite sua mensagem aqui..." #ccc onkeypress="return enviarcomenter(event);">
-                    <input type="reset" value="Enviar" id="send" onclick="enviar()">
-                </div>
-            </form>
-        </div>
-
-    </div>
-
-    <div class="pessoa6">
-
-        <div class="chat-compl">
-
-            <div id="nav-chat">
-
-                <img src="imagens/user6.jpg" id="imagem-perfil">
-
-                <h2 id="titulo">Juliana Santos</h2>
-
-                <i class='bx bx-dots-vertical-rounded'></i>
-
-
-            </div>
-
-            <div id="mylist"></div>
-            <form action="">
-                <div id="footer-chat">
-                    <i class='bx bx-message-detail'></i>
-                    <input type="text" id="chat" placeholder="  Digite sua mensagem aqui..." #ccc onkeypress="return enviarcomenter(event);">
-                    <input type="reset" value="Enviar" id="send" onclick="enviar()">
-                </div>
-            </form>
-        </div>
-
-    </div>
-    <div class="pessoa7">
-
-        <div class="chat-compl">
-
-            <div id="nav-chat">
-
-                <img src="imagens/user7.jpg" id="imagem-perfil">
-
-                <h2 id="titulo">Jeon Jung-kook</h2>
-
-                <i class='bx bx-dots-vertical-rounded'></i>
-
-
-            </div>
-
-            <div id="mylist"></div>
-            <form action="">
-                <div id="footer-chat">
-                    <i class='bx bx-message-detail'></i>
-                    <input type="text" id="chat" placeholder="  Digite sua mensagem aqui..." #ccc onkeypress="return enviarcomenter(event);">
-                    <input type="reset" value="Enviar" id="send" onclick="enviar()">
-                </div>
-            </form>
-        </div>
-
-    </div>
-    <div class="pessoa8">
-
-        <div class="chat-compl">
-
-            <div id="nav-chat">
-
-                <img src="imagens/user8.jpg" id="imagem-perfil">
-
-                <h2 id="titulo">Rebeca Hartman</h2>
-
-                <i class='bx bx-dots-vertical-rounded'></i>
-
-
-            </div>
-
-            <div id="mylist"></div>
-            <form action="">
-                <div id="footer-chat">
-                    <i class='bx bx-message-detail'></i>
-                    <input type="text" id="chat" placeholder="  Digite sua mensagem aqui..." #ccc onkeypress="return enviarcomenter(event);">
-                    <input type="reset" value="Enviar" id="send" onclick="enviar()">
-                </div>
-            </form>
-        </div>
-
-    </div>
-
-
-
-
-
-
-    <script>
-        'use strict'
-
-        function mudar() {
-
-            const theme = document.getElementById(btn);
-            var tema = document.body.classList.toggle('black-theme')
-
-
-        }
-
-
-        function enviar() {
-            var texto_digitado = window.document.getElementById("chat")
-            var n1 = texto_digitado.value
-            var texto = document.createElement("p");
-            var createA = document.createElement("b");
-            createA.innerText = "⠀⠀⠀";
-
-            texto.id = "my-message"
-            texto.innerText = `${n1}`
-            document.getElementById("mylist").appendChild(texto);
-            document.getElementById("mylist").appendChild(createA);
-
-
-            if (n1 == "Oi") {
-
-                var apontarDiv = document.querySelector("#mylist")
-                var createDiv = document.createElement("li");
-                var createB = document.createElement("b");
-                createB.innerText = "⠀⠀⠀";
-                createDiv.id = "msg-auto"
-                createDiv.innerText = "Olá, tudo bem? como posso ajudar?";
-                apontarDiv.appendChild(createDiv);
-                apontarDiv.appendChild(createB);
-
-            }
-        }
-
-        function enviarcomenter(e) {
-            e = e || window.event;
-            if (e.keyCode == 13) {
-                document.getElementById('send').click();
-                return false;
-            }
-            return true;
-        }
-    </script>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
