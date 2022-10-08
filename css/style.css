@@ -297,7 +297,7 @@ nav p{
     }
 
     nav p{
-        font-size: 15px;
+        font-size: 13px;
     }
     .mensagens{
         width: 98vw;
@@ -355,8 +355,8 @@ nav p{
     }
 
     .footer_chat #msg{
-        width: 70.5vw;
-        font-size: 20px;
+        width: 67.5vw;
+        font-size: 15px;
         height: 65px;
     }
 
@@ -377,6 +377,10 @@ nav p{
     #msgToggle{
         left: 10px;
         z-index: 999;
+    }
+
+    .btn_ligar{
+        width: 85px;
     }
 
   }
