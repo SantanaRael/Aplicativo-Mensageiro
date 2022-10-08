@@ -1,6 +1,6 @@
 *{
     padding: 0;
-    margin: 0;
+    margin: 0;    
 }
 
 body{
@@ -217,6 +217,7 @@ nav p{
     border-radius: 0px 0 20px 20px;
     bottom: 0;
     display: inline-flex;
+
 }
 
 .msg p{
@@ -251,7 +252,7 @@ nav p{
 }
 
 .mobToggle{
-    width: 100%;
+    width: 95vw;
     height: 40px;
     position: relative;
     display: inline-flex;
@@ -259,6 +260,7 @@ nav p{
     font-size: 25px;
     align-items: center;
     display: none;
+    margin: 10px;
     
     
 }
@@ -289,13 +291,23 @@ nav p{
 
 
 @media (max-width: 900px) {
+
+    nav{
+        margin: 0px;
+    }
+
+    nav p{
+        font-size: 15px;
+    }
     .mensagens{
         width: 98vw;
+        left: 0px;
     }
 
     .chat{
         display: none;
         width: 98vw;
+        height: 90vh;
     }
 
     .mobToggle{
@@ -315,8 +327,8 @@ nav p{
     }
 
     .chat{
-        left: 10px;
-        width: 100vw;
+        left: 0px;
+        width: 90vw;
     }
 
     .nav_chat{
@@ -326,10 +338,31 @@ nav p{
     .msg{
         width: 98.5vw;
         top: 120px;
+        height: 78vh;
     }
+    .msg p{
+        width: 50vw;
+        top: 120px;
+    }
+
+    .msg :nth-child(2), .msg :nth-child(4), .msg :nth-child(6){   
+        left: 30%;
+    }
+    
 
     .footer_chat{
         width: 98.5vw;
+    }
+
+    .footer_chat #msg{
+        width: 70.5vw;
+        font-size: 20px;
+        height: 65px;
+    }
+
+
+    .footer_chat .btn_ligar{
+        right: 0px;
     }
 
     .nav_chat{
